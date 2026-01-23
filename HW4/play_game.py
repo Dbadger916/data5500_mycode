@@ -34,6 +34,7 @@ def scoreCompare(score, dealerscore):
 
 #game function, that can be run again and again to allow the user to keep playing
 def main():
+    j = 3
     print("Deck before being shuffled:")
     deck.print_deck()
     deck.shuffle_deck()
@@ -66,9 +67,12 @@ def main():
     def hitting():
         nonlocal score
         nonlocal dealerscore
+        nonlocal j
         hit = input("would you like a hit? y/n: ")
         if hit == 'y':
             card3 = deck.get_card()
+            print("Card number", j, " is", card3)
+            j+=1
             score += card3.val
             if card3.val == 11 and score > 21:
                 score -= 10
@@ -94,7 +98,7 @@ def main():
                     dealerscore -= 10
             print("Dealer score is: ", dealerscore)
             scoreCompare(score, dealerscore)
-            
+
     #call hitting, ask if user would like to play again.
     hitting()
     again = input("Would you like to play again? y/n: ")
