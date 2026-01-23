@@ -8,7 +8,7 @@ class Card():
         self.val = value
         
     def __str__(self):
-        return self.face + " of " + self.suit + ", value: " + str(self.val)
+        return self.face + " of " + self.suit
 
 
 class DeckOfCards():
