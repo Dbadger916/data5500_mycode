@@ -28,7 +28,7 @@ URL = (
 response = requests.get(URL)
 price_data = response.json()
 
-#make the graph and print the exchange rates and make it a little pretty like the example output
+#make the edges thing and print the exchange rates and make it a little pretty like the example output
 
 edges = []
 
@@ -39,7 +39,7 @@ for coin_id, vs_prices in price_data.items():
     from_ticker = COIN_IDS[coin_id]
     for to_ticker, rate in vs_prices.items():
         if from_ticker == to_ticker:
-            #if its weight is the same then it dont matter
+            #dont travel from the same one to the same one duh
             continue  
         print(f"{from_ticker:<6} {to_ticker:<6} {rate:>16.8f}")
         edges.append((from_ticker, to_ticker, rate))
@@ -77,7 +77,7 @@ for src in tickers:
         if src == dst:
             continue
 
-        # Find all simple paths in botht directions but dont repeat the nodes
+        # Find all simple paths in both directions but dont repeat the nodes
         forward_paths = list(nx.all_simple_paths(g, src, dst))
         reverse_paths = list(nx.all_simple_paths(g, dst, src))
 
@@ -114,7 +114,7 @@ for src in tickers:
                     smallest_forward_path = fwd_path
                     smallest_reverse_path = rev_path
 
-#report best and worst paths that are available out ther you know them
+#report best and worst paths that are available out there 
 
 print("=" * 60)
 print(f"Smallest Paths weight factor:  {smallest_factor}")
