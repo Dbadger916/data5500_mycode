@@ -1,0 +1,151 @@
+{
+  "timestamp": "2026-04-28T02:28:03.800249",
+  "usd_prices": {
+    "aave": 97.27,
+    "avax": 9.26,
+    "btc": 77069,
+    "bch": 448.89,
+    "link": 9.31,
+    "doge": 0.099292,
+    "eth": 2295.36,
+    "ltc": 55.56,
+    "dot": 1.24,
+    "uni": 3.25
+  },
+  "greatest_factor": 1.0106396230494483,
+  "greatest_forward_path": [
+    "ltc",
+    "dot",
+    "doge",
+    "btc",
+    "bch"
+  ],
+  "greatest_reverse_path": [
+    "bch",
+    "dot",
+    "doge",
+    "btc",
+    "ltc"
+  ],
+  "full_cycle_path": [
+    "ltc",
+    "dot",
+    "doge",
+    "btc",
+    "bch",
+    "dot",
+    "doge",
+    "btc",
+    "ltc"
+  ],
+  "smallest_factor": 0.9981036506578914,
+  "smallest_forward_path": [
+    "doge",
+    "uni",
+    "btc",
+    "aave",
+    "avax"
+  ],
+  "smallest_reverse_path": [
+    "avax",
+    "aave",
+    "uni",
+    "btc",
+    "doge"
+  ],
+  "starting_usd": 1000,
+  "final_usd": 821.6339568008001,
+  "profit_loss": -178.3660431991999,
+  "trades": [
+    {
+      "side": "sell",
+      "symbol": "LTC/USD",
+      "qty": 17.581511396,
+      "usd": 974.3902175311348
+    },
+    {
+      "side": "buy",
+      "symbol": "DOT/USD",
+      "qty": 772.758707106,
+      "usd": 974.3902175311348
+    },
+    {
+      "side": "sell",
+      "symbol": "DOT/USD",
+      "qty": 771.05863795,
+      "usd": 950.4300088963084
+    },
+    {
+      "side": "buy",
+      "symbol": "DOGE/USD",
+      "qty": 9370.980928526,
+      "usd": 950.4300088963084
+    },
+    {
+      "side": "sell",
+      "symbol": "DOGE/USD",
+      "qty": 9350.364770483,
+      "usd": 927.0886669933894
+    },
+    {
+      "side": "buy",
+      "symbol": "BTC/USD",
+      "qty": 0.011791064,
+      "usd": 927.0886669933894
+    },
+    {
+      "side": "sell",
+      "symbol": "BTC/USD",
+      "qty": 0.011765123,
+      "usd": 906.016415790795
+    },
+    {
+      "side": "buy",
+      "symbol": "BCH/USD",
+      "qty": 1.974997002,
+      "usd": 906.016415790795
+    },
+    {
+      "side": "sell",
+      "symbol": "BCH/USD",
+      "qty": 1.970652008,
+      "usd": 882.7827574122967
+    },
+    {
+      "side": "buy",
+      "symbol": "DOT/USD",
+      "qty": 700.105636818,
+      "usd": 882.7827574122967
+    },
+    {
+      "side": "sell",
+      "symbol": "DOT/USD",
+      "qty": 698.565404417,
+      "usd": 861.7363115807227
+    },
+    {
+      "side": "buy",
+      "symbol": "DOGE/USD",
+      "qty": 8496.521685287,
+      "usd": 861.7363115807227
+    },
+    {
+      "side": "sell",
+      "symbol": "DOGE/USD",
+      "qty": 8477.829337579,
+      "usd": 840.6802083388764
+    },
+    {
+      "side": "buy",
+      "symbol": "BTC/USD",
+      "qty": 0.010692071,
+      "usd": 840.6802083388764
+    },
+    {
+      "side": "sell",
+      "symbol": "BTC/USD",
+      "qty": 0.010668548,
+      "usd": 821.6339568008001
+    }
+  ]
+}
